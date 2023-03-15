@@ -1,52 +1,65 @@
-# Project Name
-> Outline a brief description of your project.
+# Project Name : Rental Bike sharing assignment
+> This is the case study for a basic understanding of we have to build a multiple linear regression model for the prediction of demand for shared bikes.
 
 
 ## Table of Contents
 * [General Info](#general-information)
-* [Technologies Used](#technologies-used)
+* [Libraries Used in Python](#libraries-used)
 * [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
-
-<!-- You can include any other section that is pertinent to your problem -->
-
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+* [Acknowledgements](#acknowledgements) 
+* [Team Members](#teammembers)
 
 
-## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+## General Information <a name="general-information"></a>
+A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
+A US bike-sharing provider BoomBikes has recently suffered considerable dips in their revenues due to the ongoing Corona pandemic. The company is finding it very difficult to sustain in the current market scenario. So, it has decided to come up with a mindful business plan to be able to accelerate its revenue as soon as the ongoing lockdown comes to an end, and the economy restores to a healthy state.
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+In such an attempt, BoomBikes aspires to understand the demand for shared bikes among the people after this ongoing quarantine situation ends across the nation due to Covid-19. They have planned this to prepare themselves to cater to the people's needs once the situation gets better all around and stand out from other service providers and make huge profits.
 
+The company want to understand the factors affecting the demand for these shared bikes in the American market. The company wants to know:
 
-## Contact
-Created by [@githubusername] - feel free to contact me!
+- Which variables are significant in predicting the demand for shared bikes.
+- How well those variables describe the bike demands
 
+**Goal:**
+We need to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market.
 
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
+**We are going to solve the problem in 4 sections i.e. :**
+- Data understanding and exploration
+- Data Visualisation 
+- Data preparation
+- Model building and evaluation
 
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+## Libraries Used in Python <a name="libraries-used"></a>
+- numpy 
+- pandas
+- matplotlib.pyplot
+- seaborn 
+- missingno
+- sklearn
+- statsmodels
+
+## Conclusions <a name="conclusions"></a>
+  **Assumptions of Linear Regression:**
+
+* The error terms are normally distributed.
+* The training and testing accuracy are nearly equal hence there is no Overfit/Underfit situation.
+* The predicted values have linear relationship with the actual values.
+* The distribution plot of error term shows the normal distribution with mean at Zero.
+
+  **Major points:**
+ - Following are the top 5 variables which is recomendeded to give utmost importance while planning to achieve maximum demand.
+ 
+| Spring season| Temperature | Mist and Cloudy | Wednesday | Working day |
+| --- | --- | --- | --- | --- |
+| -0.684 | 0.400 | -0.365 | 0.275 | 0.233 |
+
+  - From R-Sqaured and adj R-Sqaured value of both train and test dataset we could conclude that the above variables can well explain more than 80% of bike demand.**
+
+## Acknowledgements <a name="acknowledgements"></a>
+- This project is given by Upgrad as an assignment case study
+- All the data and requirements are provided by Upgrad.
+
+## Team Members <a name="teammembers"></a>
+Assignment done solely by Preity Rashmi
